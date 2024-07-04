@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<button id="btnInstalarApp" style="display: none;">Instalar Aplicativo</button>    
+
+<form id="formularioPesquisa">
+
+    <label for="regiao">Região:</label>
+    <select id="regiao" name="regiao" required>
+        <option value="Suarão - R1">Suarão - R1</option>
+        <option value="Savoy - R2">Savoy - R2</option>
+        <option value="Oásis - R3">Oásis - R3</option>
+        <option value="Centro - R4">Centro - R4</option>
+        <option value="Belas Artes - R5">Belas Artes - R5</option>
+        <option value="CESP - R6">CESP - R6</option>
+        <option value="Gaivota - R7">Gaivota - R7</option>
+    </select>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="seuBairro">Bairro:</label>
+    <input type="text" id="seuBairro" name="seuBairro" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Prefere não informar">Prefere não informar</option>
+    </select>
+
+    <label for="idade">Idade:</label>
+    <select id="idade" name="idade" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="16 a 19">16 a 19</option>
+        <option value="20 a 24">20 a 24</option>
+        <option value="25 a 34">25 a 34</option>
+        <option value="35 a 44">35 a 44</option>
+        <option value="45 a 59">45 a 59</option>
+        <option value="60 ou mais">60 ou mais</option>
+    </select>
+    
+    <h3>Avaliação de Governo</h3>
+
+    <label for="avaliacaoGoverno">Você aprova ou desaprova o governo do prefeito Tiago Cervantes?:</label>
+    <select id="avaliacaoGoverno" name="avaliacaoGoverno" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="Aprovo">Aprovo</option>
+        <option value="Desaprovo">Desaprovo</option>
+    </select>
+
+    <label for="notaGoverno">De que forma você avalia o governo Tiago Cervantes:</label>
+    <select id="notaGoverno" name="notaGoverno" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="Ótimo">Ótimo</option>
+        <option value="Bom">Bom</option>
+        <option value="Regular">Regular</option>
+        <option value="Ruim">Ruim</option>
+        <option value="Péssimo">Péssimo</option>
+        <option value="Não sei avaliar">Não sei avaliar</option>
+    </select>
+
+
+    <label for="votoEspontaneo">Se as eleições fossem hoje, em quem você votária para prefeito de Itanhaém:</label>
+    <input type="text" id="votoEspontaneo" name="votoEspontaneo" required>
+
+    <label for="votoCandidatos">E se as eleições fossem hoje, e estes candidatos em quem você votaria para prefeito de Itanhaém?:</label>
+    <select id="votoCandidatos" name="votoCandidatos" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="Forssel Ex-Prefeito">Forssel Ex-Prefeito</option>
+        <option value="Marco Aurélio">Marco Aurélio</option>
+        <option value="Poliana">Poliana</option>
+        <option value="Silvinho Investigador">Silvinho Investigador</option>
+        <option value="Tiago Cervantes">Tiago Cervantes</option>
+        <option value="Nenhum">Nenhum</option>
+    </select>
+
+    <label for="porqueEscolheu">Em poucas palavras o Senhor(a) poderia dizer porque escolheu esse nome?</label>
+    <input type="text" id="porqueEscolheu" name="porqueEscolheu" required>
+    
+    <label for="segundaOpcaoVoto">Ainda olhando os nomes do disco qual seria a sua segunda opção de voto?:</label>
+    <select id="segundaOpcaoVoto" name="segundaOpcaoVoto" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="Forssel Ex-Prefeito">Forssel Ex-Prefeito</option>
+        <option value="Marco Aurélio">Marco Aurélio</option>
+        <option value="Poliana">Poliana</option>
+        <option value="Silvinho Investigador">Silvinho Investigador</option>
+        <option value="Tiago Cervantes">Tiago Cervantes</option>
+        <option value="Nenhum">Nenhum</option>
+    </select>
+
+    <label for="rejeicaoVoto">E destes nomes em qual candidato o Senhor(a) não vota em hipótese alguma?:</label>
+    <select id="rejeicaoVoto" name="rejeicaoVoto" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="Forssel Ex-Prefeito">Forssel Ex-Prefeito</option>
+        <option value="Marco Aurélio">Marco Aurélio</option>
+        <option value="Poliana">Poliana</option>
+        <option value="Silvinho Investigador">Silvinho Investigador</option>
+        <option value="Tiago Cervantes">Tiago Cervantes</option>
+        <option value="Nenhum">Nenhum</option>
+    </select>
+
+    <label for="nomeVereador">O senhor(a) já escolheu um nome para vereador?</label>
+    <input type="text" id="nomeVereador" name="nomeVereador" required>
+    
+    <label for="condenacaoMarco">O senhor(a) tem conhecimento da condenação do ex-prefeito Marco Aurélio</label>
+    <select id="condenacaoMarco" name="condenacaoMarco" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+
+    <label for="condenacaoCris">O senhor(a) tem conhecimento da condenação da candidata Cris Forssel</label>
+    <select id="condenacaoCris" name="condenacaoCris" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    
+    <label for="uniaoCrisMarco">O senhor(a) sabia que os dois se uniram, a Cris Forssel e o Marco Aurélio?</label>
+    <select id="uniaoCrisMarco" name="uniaoCrisMarco" required>
+        <option value="sem valor">Escolha Uma opção...</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+
+    <label for="oqueachaCondenacao">O que o senhor(a) achou dessa união dos dois condenados</label>
+    <input type="text" id="oqueachaCondenacao" name="oqueachaCondenacao" required>
+    
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<button id="btnExportar" onclick="verificarSenha()">Exportar Dados</button>
+
+<!-- Novo botão para limpar o cache -->
+<button id="btnLimparCache" style="background-color: #d9534f; color: white;">Limpar Dados Salvos</button>
+
+<script src="script.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/pesquisav9/service-worker.js', { scope: '/pesquisav9/' })
+        .then(function(registration) {
+          console.log('Service Worker registrado com sucesso:', registration.scope);
+        }).catch(function(err) {
+          console.log('Registro do Service Worker falhou:', err);
+        });
+    }
+  </script>
+</body>
+</html>
+
+
